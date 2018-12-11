@@ -15,6 +15,7 @@ def sen():
     try:
         #webbrowser.open('http://origano.clik.polito.it:8888/api/v1/users/1/scanners/56')
         r = requests.get("http://origano.clik.polito.it:8888/api/v1/users/1/scanners/56")   #user1 scanner56
+        print(r.json())
     except:
         print("Error on API request.")
 
