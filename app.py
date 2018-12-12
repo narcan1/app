@@ -6,7 +6,8 @@ def ing():
         #webbrowser.open('http://origano.clik.polito.it:8888/api/v1/users/1/56/products')
         r = requests.get("http://origano.clik.polito.it:8888/api/v1/users/1/56/products")   #tutti gli ingredienti di user1 scanner56
         r = (r.json())
-        print(r)
+        #print(r)
+        print(json.dumps(r, indent=4, sort_keys=False))
         #for i in r:
             #json.loads('r')
             #json.loads(r)
